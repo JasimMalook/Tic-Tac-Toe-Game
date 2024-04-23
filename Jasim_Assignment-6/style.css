@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #000;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+h2 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.player-Click {
+  font-size: 1.5rem;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.player-Click span {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+
+}
+
+/* .playerO {
+  background-color: #3cff00;
+} */
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.game-board {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.cell {
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  cursor: pointer;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.cell:hover {
+  background: #fff;
+  color: #000;
+}
+
+.reset {
+  background: #fff;
+  color: #000;
+  padding: 10px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.reset:hover {
+  background: #000;
+  color: #fff;
+}
+
+.para {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 400px;
+}
+
+p {
+  color: #fff;
+  font-size: 2rem;
+}
+
+
+
+
